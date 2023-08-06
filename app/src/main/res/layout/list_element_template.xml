@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="25dp"
+        app:cardBackgroundColor="@color/white"
+        android:elevation="7dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginStart="25dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="INVITE"
+            android:id="@+id/inviteTV"
+            android:textColor="@color/main_bg"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="15dp"
+            android:gravity="center"
+            app:drawableStartCompat="@drawable/add"
+            app:drawableTint="@color/main_bg"
+            android:layout_alignParentEnd="true"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/inviteTV"
+            android:id="@+id/userDetailsLL"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="User Name"
+                android:id="@+id/userNameTV"
+                android:textColor="@color/main_bg"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/locProfessionTV"
+                android:text="Location | Profession"
+                android:textColor="@color/primary_bg"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Within 6.4 KM"
+                android:id="@+id/rangeTV"
+                android:textColor="@color/main_bg"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="5dp"/>
+
+            <ProgressBar
+                android:layout_width="150dp"
+                android:layout_height="13dp"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:progressDrawable="@drawable/progress_list_bg"
+                android:max="100"
+                android:id="@+id/profileComplete"
+                android:progress="25"
+                android:layout_marginBottom="7dp"/>
+
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:id="@+id/iconLL">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/call"
+                    android:background="@drawable/icon_bg"
+                    android:padding="7dp"
+                    app:tint="@color/white"
+                    android:id="@+id/call"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/person_add"
+                    android:id="@+id/addPerson"
+                    android:background="@drawable/icon_bg"
+                    android:padding="7dp"
+                    app:tint="@color/white"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/liveLocation"
+                    android:src="@drawable/location"
+                    android:background="@drawable/icon_bg"
+                    android:padding="7dp"
+                    app:tint="@color/white" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/userDetailsLL"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Coffee | Business"
+                    android:id="@+id/purposeTV"
+                    android:textColor="@color/main_bg"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/common_msg"
+                    android:textColor="@color/primary_bg"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/userMsg"
+                    android:layout_gravity="center"
+                    android:text=""
+                    android:textColor="@color/primary_bg"
+                    android:textSize="14sp"
+                    android:justificationMode="inter_word"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="70dp"
+        android:layout_height="80dp"
+        app:cardBackgroundColor="@color/grey"
+        app:cardCornerRadius="15dp"
+        android:elevation="7dp"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/proNameTV"
+            android:layout_gravity="center"
+            android:textColor="@color/main_bg"
+            android:textSize="35sp"
+            android:text="UN"
+            android:gravity="center"
+            android:textAllCaps="true"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/proImg"
+            android:visibility="gone"/>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

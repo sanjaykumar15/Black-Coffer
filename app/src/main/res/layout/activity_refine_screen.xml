@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RefineScreen">
+
+    <include
+        layout="@layout/toolbar"
+        android:id="@+id/toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="15dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="@string/select_your_availability"
+            android:textColor="@color/primary_bg"
+            android:layout_marginBottom="7dp"/>
+
+        <Spinner
+            android:id="@+id/availabilitySpn"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:background="@drawable/outline"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="@string/add_your_status"
+            android:textColor="@color/primary_bg"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            app:counterEnabled="true"
+            app:counterMaxLength="250">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/statusET"
+                android:textSize="14sp"
+                android:maxLength="250"
+                android:padding="7dp"
+                android:background="@drawable/outline"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="@string/select_local_distance"
+            android:textColor="@color/primary_bg"
+            android:layout_marginBottom="7dp"/>
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:thumbTint="@color/main_bg"
+            android:progressTint="@color/main_bg"
+            android:min="1"
+            android:max="100"
+            android:id="@+id/distanceSB"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="@string/one_km"
+                android:textColor="@color/primary_bg" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/maxTV"
+                android:textSize="14sp"
+                android:text="@string/hund_km"
+                android:layout_alignParentEnd="true"
+                android:textColor="@color/primary_bg" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="@string/select_purpose"
+            android:textColor="@color/primary_bg"
+            android:layout_marginBottom="7dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="7dp">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@color/transparent"
+                android:text="@string/coffee"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:paddingLeft="13dp"
+                android:paddingRight="13dp"
+                android:textSize="14sp"
+                android:id="@+id/coffeeCB"
+                android:textColor="@drawable/radio_text_color"
+                android:background="@drawable/radio_selector"
+                android:layout_marginStart="5dp"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/business"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:paddingLeft="13dp"
+                android:paddingRight="13dp"
+                android:button="@color/transparent"
+                android:textSize="14sp"
+                android:textColor="@drawable/radio_text_color"
+                android:background="@drawable/radio_selector"
+                android:id="@+id/businessCB"
+                android:layout_marginStart="5dp"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hobbies"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:paddingLeft="13dp"
+                android:paddingRight="13dp"
+                android:button="@color/transparent"
+                android:textColor="@drawable/radio_text_color"
+                android:background="@drawable/radio_selector"
+                android:textSize="14sp"
+                android:id="@+id/hobbiesCB"
+                android:layout_marginStart="5dp"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/friendship"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:paddingLeft="13dp"
+                android:paddingRight="13dp"
+                android:textColor="@drawable/radio_text_color"
+                android:background="@drawable/radio_selector"
+                android:textSize="14sp"
+                android:button="@color/transparent"
+                android:id="@+id/friendshipCB"
+                android:layout_marginStart="5dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/movies"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:paddingLeft="13dp"
+                android:paddingRight="13dp"
+                android:button="@color/transparent"
+                android:textSize="14sp"
+                android:textColor="@drawable/radio_text_color"
+                android:background="@drawable/radio_selector"
+                android:id="@+id/moviesCB"
+                android:layout_marginStart="5dp"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dinning"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:paddingLeft="13dp"
+                android:paddingRight="13dp"
+                android:button="@color/transparent"
+                android:textSize="14sp"
+                android:id="@+id/dinningCB"
+                android:textColor="@drawable/radio_text_color"
+                android:background="@drawable/radio_selector"
+                android:layout_marginStart="5dp"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dating"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:paddingLeft="13dp"
+                android:paddingRight="13dp"
+                android:textSize="14sp"
+                android:button="@color/transparent"
+                android:textColor="@drawable/radio_text_color"
+                android:background="@drawable/radio_selector"
+                android:id="@+id/datingCB"
+                android:layout_marginStart="5dp"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/matrimony"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:paddingLeft="13dp"
+                android:paddingRight="13dp"
+                android:textColor="@drawable/radio_text_color"
+                android:background="@drawable/radio_selector"
+                android:textSize="14sp"
+                android:button="@color/transparent"
+                android:id="@+id/matrimonyCB"
+                android:layout_marginStart="5dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/save_amp_explore"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:layout_gravity="center"
+            android:textSize="15sp"
+            android:background="@drawable/curve_bg"
+            android:paddingTop="7dp"
+            android:paddingBottom="7dp"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
