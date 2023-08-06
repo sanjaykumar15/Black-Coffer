@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/editProfile"
+            android:icon="@drawable/person"
+            android:title="@string/edit_profile" />
+
+        <item
+            android:id="@+id/network"
+            android:icon="@drawable/my_network"
+            android:title="@string/my_network" />
+
+        <item
+            android:id="@+id/switchToBus"
+            android:icon="@drawable/business"
+            android:title="@string/switch_to_business" />
+
+        <item
+            android:id="@+id/switchToMer"
+            android:icon="@drawable/merchant"
+            android:title="@string/switch_to_merchant" />
+
+        <item
+            android:id="@+id/dating"
+            android:icon="@drawable/dating"
+            android:title="@string/dating" />
+
+        <item
+            android:id="@+id/matrimony"
+            android:icon="@drawable/matrimony"
+            android:title="@string/matrimony" />
+
+        <item
+            android:id="@+id/buySellRent"
+            android:icon="@drawable/buy"
+            android:title="@string/buy_sell_rent" />
+
+        <item
+            android:id="@+id/jobs"
+            android:icon="@drawable/jobs"
+            android:title="@string/jobs" />
+
+        <item
+            android:id="@+id/businessCard"
+            android:icon="@drawable/business_cards"
+            android:title="@string/business_cards" />
+
+        <item
+            android:id="@+id/netclanGroups"
+            android:icon="@drawable/hash_tag"
+            android:title="@string/netclan_groups" />
+
+        <item
+            android:id="@+id/notes"
+            android:icon="@drawable/notes"
+            android:title="@string/notes" />
+
+        <item
+            android:id="@+id/liveLocation"
+            android:icon="@drawable/location"
+            android:title="@string/live_locations" />
+
+    </group>
+
+</menu>
